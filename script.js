@@ -26,7 +26,7 @@ const sortBands = (bands) => {
 
 // Insert sorted bands into the unordered list
 const sortedBands = sortBands(bands);
-const bandList = document.getElementById('band');
+const bandList = document.getElementById('bands');
 sortedBands.forEach(band => {
     const li = document.createElement('li');
     li.textContent = band;
