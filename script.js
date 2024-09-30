@@ -15,7 +15,7 @@ const bands = [
     'An Old Dog'
 ];
 
-// Function to sort the bands while ignoring specific words
+
 const sortBands = (bands) => {
     return bands.sort((a, b) => {
         const strippedA = a.replace(/^(a |an |the )/i, '').toLowerCase();
@@ -24,7 +24,7 @@ const sortBands = (bands) => {
     });
 };
 
-// Insert sorted bands into the unordered list
+
 const sortedBands = sortBands(bands);
 const bandList = document.getElementById('bands');
 sortedBands.forEach(band => {
